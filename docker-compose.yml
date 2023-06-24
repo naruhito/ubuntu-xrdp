@@ -7,5 +7,5 @@ services:
     hostname: ubuntu-xrdp
     restart: always
     ports:
-      - 13389:3389
-      - 10022:22
+      - "13389:3389"
+      - "10022:22"
