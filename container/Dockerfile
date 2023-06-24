@@ -20,6 +20,8 @@ RUN apt update && DEBIAN_FRONTEND=noninteractive apt -y install \
   supervisor\ 
   vim \
   wget \
+  xfce4 \
+  xfce4-goodies \
   xrdp \
   && apt clean && rm -rf /var/lib/apt/lists/*
 
