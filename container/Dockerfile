@@ -32,6 +32,7 @@ RUN mkdir -p /var/run/sshd \
 
 # supervisor
 COPY bin/* /usr/local/bin/
+COPY pkg/* /usr/local/share/
 RUN chmod +x /usr/local/bin/*
 COPY supervisor/* /etc/supervisor/conf.d/
 ENTRYPOINT ["entrypoint.bash"]
