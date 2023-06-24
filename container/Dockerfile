@@ -1,9 +1,5 @@
 FROM ubuntu:22.04
 
-ENV LANG="ja_JP.UTF-8" \
-  LANGUAGE="ja_JP:ja" \
-  TZ="JST-9"
-
 RUN apt update && DEBIAN_FRONTEND=noninteractive apt -y install \
   build-essential \
   curl \
@@ -19,9 +15,6 @@ RUN apt update && DEBIAN_FRONTEND=noninteractive apt -y install \
   sudo \
   supervisor\ 
   vim \
-  wget \
-  xfce4 \
-  xfce4-goodies \
   xrdp \
   && apt clean && rm -rf /var/lib/apt/lists/*
 
@@ -36,8 +29,9 @@ RUN mkdir -p /var/run/sshd \
 # xrdp
 
 
+
 # supervisor
-COPY supervisor/* /etc/supervisor/conf.d/
 COPY bin/* /usr/local/bin/
 RUN chmod +x /usr/local/bin/*
+COPY supervisor/* /etc/supervisor/conf.d/
 ENTRYPOINT ["entrypoint.bash"]
