@@ -24,3 +24,6 @@ docker-compose rm
 
 - [google-chrome Failed to move to new namespace](https://stackoverflow.com/questions/59087200/google-chrome-failed-to-move-to-new-namespace)
     - Chrome for Linux requires namespace, cap_add `SYS_ADMIN` can solve the issue.
+
+- [Docker上のpuppeteerがPage crashしてしまうときはshmサイズを疑う](https://qiita.com/windyakin/items/00b085902547570eebc6)
+    - Allocate sufficient shm for Chrome.

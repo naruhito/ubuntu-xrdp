@@ -9,7 +9,8 @@ services:
     ports:
       - "13389:3389"
       - "10022:22"
-    cap_add:
-      - SYS_ADMIN
     # security_opt:
     #   - "seccomp:unconfined"  #NOTE: https://www.creationline.com/lab/46861 >> sudo yum install libseccomp OR sudo apt install libseccomp-dev
+    cap_add:
+      - SYS_ADMIN
+    shm_size: 2g
