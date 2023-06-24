@@ -18,3 +18,6 @@ docker-compose rm
 
 - [Docker Tips - Full Ubuntu in a Container using XRDP on Windows (2022)](https://www.youtube.com/watch?v=0rl5145aEMk)
     - GNOME example, terminal has some configuration issue.
+
+- [xRDP – How to disable Drive Redirection and Clipboard](https://c-nergy.be/blog/?p=17410)
+    - Configure /etc/xrdp/xrdp.ini and set rdpdr=false, cliprdr=false.

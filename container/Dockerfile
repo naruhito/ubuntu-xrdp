@@ -1,8 +1,10 @@
 FROM ubuntu:22.04
 
 RUN apt update && DEBIAN_FRONTEND=noninteractive apt -y install \
+  bash-completion \
   build-essential \
   curl \
+  dbus-x11 \
   fonts-noto \
   git \
   ibus-mozc \
@@ -14,6 +16,7 @@ RUN apt update && DEBIAN_FRONTEND=noninteractive apt -y install \
   openssh-server \
   sudo \
   supervisor\ 
+  ubuntu-gnome-desktop \
   vim \
   xrdp \
   && apt clean && rm -rf /var/lib/apt/lists/*
@@ -28,6 +31,8 @@ RUN mkdir -p /var/run/sshd \
 
 # xrdp
 RUN mkdir -p /var/run/dbus
+  && sed -i -E 's/^rdpdr=true/rdpdr=false/g' /etc/xrdp/xrdp.ini  # optional
+  && sed -i -E 's/^cliprdr=true/cliprdr=false/g' /etc/xrdp/xrdp.ini  # optional
 
 
 # supervisor
