@@ -12,7 +12,7 @@ jobs:
     - name: Publish Docker
       uses: elgohr/Publish-Docker-Github-Action@v5
       with:
-        name: naruhito/ubuntu-xrdp
+        name: naruhito/ubuntu-xrdp:22.04
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
         workdir: container
