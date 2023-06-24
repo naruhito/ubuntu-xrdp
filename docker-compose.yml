@@ -9,5 +9,5 @@ services:
     ports:
       - "13389:3389"
       - "10022:22"
-    # security_opt:  # NOTE: https://www.creationline.com/lab/46861
-    #   - "seccomp:unconfined"  # sudo yum install libseccomp OR sudo apt install libseccomp-dev
+    # security_opt:
+    #   - "seccomp:unconfined"  #NOTE: https://www.creationline.com/lab/46861 >> sudo yum install libseccomp OR sudo apt install libseccomp-dev
