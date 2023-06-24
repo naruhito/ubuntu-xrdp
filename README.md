@@ -8,6 +8,29 @@ docker-compose up
 docker-compose rm
 ```
 
+### Screenshots
+
+SSH connection:
+
+![ssh-supervisorctl](ssh-supervisorctl.png)
+
+RDP connection:
+
+![rdp-connect](rdp-connect.png)
+
+Terminal:
+
+![rdp-terminal](rdp-terminal.png)
+
+Chrome:
+
+![rdp-chrome](rdp-chrome.png)
+
+Japanese input (Mozc):
+
+![rdp-japanese](rdp-japanese.png)
+
+
 ## References
 
 - [Why I cannot run `apt update` inside a fresh ubuntu:22.04?](https://stackoverflow.com/questions/71941032/why-i-cannot-run-apt-update-inside-a-fresh-ubuntu22-04)
