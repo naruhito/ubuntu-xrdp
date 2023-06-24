@@ -27,7 +27,7 @@ RUN mkdir -p /var/run/sshd \
 
 
 # xrdp
-
+RUN mkdir -p /var/run/dbus
 
 
 # supervisor
