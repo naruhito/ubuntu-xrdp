@@ -35,13 +35,16 @@ RUN mkdir -p /var/run/dbus \
   && apt -y remove gnome-initial-setup \
   && sed -i -E 's/^rdpdr=true/rdpdr=false/g' /etc/xrdp/xrdp.ini  # optional \
   && sed -i -E 's/^cliprdr=true/cliprdr=false/g' /etc/xrdp/xrdp.ini  # optional
+
 COPY xrdp/*.sh /etc/xrdp/
 RUN chmod +x /etc/xrdp/*.sh
+
+COPY pkg/google-chrome-stable_current_amd64.deb /usr/local/share/
+RUN dpkg -i /usr/local/share/google-chrome-stable_current_amd64.deb
 
 
 # supervisor
 COPY bin/* /usr/local/bin/
-COPY pkg/* /usr/local/share/
 RUN chmod +x /usr/local/bin/*
 COPY supervisor/* /etc/supervisor/conf.d/
 ENTRYPOINT ["entrypoint.bash"]
