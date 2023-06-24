@@ -9,5 +9,9 @@ docker-compose rm
 ```
 
 ## References
+
 - [Why I cannot run `apt update` inside a fresh ubuntu:22.04?](https://stackoverflow.com/questions/71941032/why-i-cannot-run-apt-update-inside-a-fresh-ubuntu22-04)
+    - Docker >= 20.10.9 is required.
+
 - [突然の「Operation not permitted」—Dockerが採用するセキュリティ機構「Seccomp」とは何か？](https://www.creationline.com/lab/46861)
+    - libseccomp needs to be updated on docker host.
