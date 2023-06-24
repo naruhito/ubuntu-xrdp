@@ -1,0 +1,18 @@
+name: dockerhub
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Publish Docker
+      uses: elgohr/Publish-Docker-Github-Action@v5
+      with:
+        name: naruhito/ubuntu-xrdp
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+        workdir: container

@@ -1,0 +1,11 @@
+version: "3"
+services:
+  application:
+    build: container
+    image: naruhito/ubuntu-xrdp:22.04
+    container_name: ubuntu-xrdp
+    hostname: ubuntu-xrdp
+    restart: always
+    ports:
+      - 13389:3389
+      - 10022:22
