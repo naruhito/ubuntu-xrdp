@@ -21,3 +21,6 @@ docker-compose rm
 
 - [xRDP – How to disable Drive Redirection and Clipboard](https://c-nergy.be/blog/?p=17410)
     - Configure /etc/xrdp/xrdp.ini and set rdpdr=false, cliprdr=false.
+
+- [google-chrome Failed to move to new namespace](https://stackoverflow.com/questions/59087200/google-chrome-failed-to-move-to-new-namespace)
+    - Chrome for Linux requires namespace, cap_add `SYS_ADMIN` can solve the issue.
