@@ -8,21 +8,26 @@ docker-compose up
 docker-compose rm
 ```
 
-### Screenshots
+## Screenshots
 
 SSH connection:
+
 ![ssh-supervisorctl](screenshots/ssh-supervisorctl.png)
 
 RDP connection:
+
 ![rdp-connect](screenshots/rdp-connect.png)
 
 Terminal:
+
 ![rdp-terminal](screenshots/rdp-terminal.png)
 
 Chrome:
+
 ![rdp-chrome](screenshots/rdp-chrome.png)
 
 Japanese input (Mozc):
+
 ![rdp-japanese](screenshots/rdp-japanese.png)
 
 
