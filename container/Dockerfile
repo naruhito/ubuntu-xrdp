@@ -32,6 +32,7 @@ RUN mkdir -p /var/run/sshd \
 # xrdp
 RUN mkdir -p /var/run/dbus \
   && adduser xrdp ssl-cert \
+  && apt -y remove gnome-initial-setup \
   && sed -i -E 's/^rdpdr=true/rdpdr=false/g' /etc/xrdp/xrdp.ini  # optional \
   && sed -i -E 's/^cliprdr=true/cliprdr=false/g' /etc/xrdp/xrdp.ini  # optional
 COPY xrdp/*.sh /etc/xrdp/
