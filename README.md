@@ -15,3 +15,6 @@ docker-compose rm
 
 - [突然の「Operation not permitted」—Dockerが採用するセキュリティ機構「Seccomp」とは何か？](https://www.creationline.com/lab/46861)
     - libseccomp needs to be updated on docker host.
+
+- [Docker Tips - Full Ubuntu in a Container using XRDP on Windows (2022)](https://www.youtube.com/watch?v=0rl5145aEMk)
+    - GNOME example, terminal has some configuration issue.
