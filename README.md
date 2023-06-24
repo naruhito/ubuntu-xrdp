@@ -12,23 +12,23 @@ docker-compose rm
 
 SSH connection:
 
-![ssh-supervisorctl](ssh-supervisorctl.png)
+![ssh-supervisorctl](screenshots/ssh-supervisorctl.png)
 
 RDP connection:
 
-![rdp-connect](rdp-connect.png)
+![rdp-connect](screenshots/rdp-connect.png)
 
 Terminal:
 
-![rdp-terminal](rdp-terminal.png)
+![rdp-terminal](screenshots/rdp-terminal.png)
 
 Chrome:
 
-![rdp-chrome](rdp-chrome.png)
+![rdp-chrome](screenshots/rdp-chrome.png)
 
 Japanese input (Mozc):
 
-![rdp-japanese](rdp-japanese.png)
+![rdp-japanese](screenshots/rdp-japanese.png)
 
 
 ## References
