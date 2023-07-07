@@ -9,6 +9,9 @@ function main() {
 }
 
 function add-sample-user() {
+  if id ubuntu; then
+    return 0
+  fi
   useradd -m ubuntu -p $(openssl passwd ubuntu)
   usermod -s /bin/bash ubuntu
   usermod -aG sudo ubuntu
